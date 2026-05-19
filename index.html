@@ -1,239 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Daffaa Erlangga | Portfolio</title>
+  <title>Daffaa Portfolio</title>
 
-  <link rel="stylesheet" href="./src/input.css">
-
-  <script defer src="./js/script.js"></script>
+  <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body class="bg-gray-950 text-white">
+<body class="bg-[#020617] text-white">
 
   <!-- Navbar -->
-  <nav class="fixed w-full bg-gray-900 shadow-lg z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between">
-      <h1 class="text-xl font-bold">Daffaa</h1>
+  <nav class="fixed top-0 w-full bg-[#020617]/80 backdrop-blur-lg border-b border-cyan-500/10 z-50">
 
-      <ul class="flex gap-6">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <h1 class="text-3xl font-bold text-cyan-400">
+        Daffaa
+      </h1>
+
+      <ul class="hidden md:flex gap-10 text-gray-300">
+
+        <li>
+          <a href="#about" class="hover:text-cyan-400 transition">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#skills" class="hover:text-cyan-400 transition">
+            Skills
+          </a>
+        </li>
+
+        <li>
+          <a href="#projects" class="hover:text-cyan-400 transition">
+            Projects
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact" class="hover:text-cyan-400 transition">
+            Contact
+          </a>
+        </li>
+
       </ul>
+
     </div>
+
   </nav>
 
   <!-- Hero -->
-  <section class="min-h-screen flex items-center justify-center">
-    <div class="text-center">
+  <section class="min-h-screen flex items-center">
 
-      <img
-        src="./assets/profile.png"
-        class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-cyan-400"
-      >
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
-      <h1 class="text-5xl font-bold mb-4">
-        Daffaa Erlangga Joko Putra
-      </h1>
+      <!-- Text -->
+      <div>
 
-      <p class="text-xl text-gray-300">
-        Information Systems Graduate | IT Audit | UI/UX Designer
+        <p class="text-cyan-400 text-xl mb-4">
+          Hello, I'm
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+
+          Daffaa
+          <span class="text-cyan-400">
+            Erlangga
+          </span>
+
+          <br>
+
+          Joko Putra
+
+        </h1>
+
+        <p class="text-gray-400 text-lg leading-relaxed mb-10">
+
+          Information Systems Graduate focused on
+          IT Audit, IT Governance, UI/UX Design,
+          and modern digital solutions.
+
+        </p>
+
+        <div class="flex gap-5">
+
+          <a
+            href="https://github.com/Erlanggard"
+            target="_blank"
+            class="bg-cyan-500 hover:bg-cyan-400 transition px-8 py-4 rounded-2xl font-semibold"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/daffa-erlangga-joko-putra-2251a5361"
+            target="_blank"
+            class="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition px-8 py-4 rounded-2xl font-semibold"
+          >
+            LinkedIn
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Image -->
+      <div class="flex justify-center">
+
+        <div class="relative">
+
+          <div class="absolute inset-0 bg-cyan-500 blur-[120px] opacity-20 rounded-full"></div>
+
+          <img
+            src="./assets/profile.png"
+            alt="profile"
+            class="relative w-[350px] md:w-[450px] rounded-[40px] border border-cyan-400/30 shadow-2xl"
+          >
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-32">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-5xl font-bold mb-16">
+        About Me
+      </h2>
+
+      <div class="bg-white/5 border border-white/10 rounded-3xl p-10">
+
+        <p class="text-gray-300 text-lg leading-relaxed">
+
+          Fresh graduate Sistem Informasi dengan pengalaman
+          pada bidang audit sistem informasi, tata kelola TI,
+          dan UI/UX Design. Memiliki pengalaman dalam
+          perancangan sistem berbasis website menggunakan
+          metode User Centered Design (UCD), audit keamanan
+          sistem menggunakan Risk Based Audit, serta analisis
+          tata kelola TI menggunakan framework COBIT 5.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-32 bg-[#07111f]">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-5xl font-bold mb-16">
+        Skills
+      </h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+        <div class="bg-white/5 p-8 rounded-3xl text-center hover:bg-cyan-500 hover:text-black transition">
+          HTML
+        </div>
+
+        <div class="bg-white/5 p-8 rounded-3xl text-center hover:bg-cyan-500 hover:text-black transition">
+          CSS
+        </div>
+
+        <div class="bg-white/5 p-8 rounded-3xl text-center hover:bg-cyan-500 hover:text-black transition">
+          JavaScript
+        </div>
+
+        <div class="bg-white/5 p-8 rounded-3xl text-center hover:bg-cyan-500 hover:text-black transition">
+          Tailwind CSS
+        </div>
+
+        <div class="bg-white/5 p-8 rounded-3xl text-center hover:bg-cyan-500 hover:text-black transition">
+          UI/UX Design
+        </div>
+
+        <div class="bg-white/5 p-8 rounded-3xl text-center hover:bg-cyan-500 hover:text-black transition">
+          COBIT 5
+        </div>
+
+        <div class="bg-white/5 p-8 rounded-3xl text-center hover:bg-cyan-500 hover:text-black transition">
+          IT Audit
+        </div>
+
+        <div class="bg-white/5 p-8 rounded-3xl text-center hover:bg-cyan-500 hover:text-black transition">
+          Figma
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-32">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="text-5xl font-bold mb-16">
+        Projects
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- Project 1 -->
+        <div class="bg-white/5 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
+
+          <img
+            src="./assets/project1.jpg"
+            class="w-full h-56 object-cover"
+          >
+
+          <div class="p-8">
+
+            <h3 class="text-2xl font-bold mb-4">
+              Sistem Informasi Pelatihan
+            </h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Website pelatihan berbasis User
+              Centered Design untuk Mitra Solusi Teknologi.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white/5 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
+
+          <img
+            src="./assets/project2.png"
+            class="w-full h-56 object-cover"
+          >
+
+          <div class="p-8">
+
+            <h3 class="text-2xl font-bold mb-4">
+              Audit SI Dinustek
+            </h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Audit keamanan jaringan menggunakan
+              pendekatan Risk Based Audit.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white/5 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
+
+          <img
+            src="./assets/project3.png"
+            class="w-full h-56 object-cover"
+          >
+
+          <div class="p-8">
+
+            <h3 class="text-2xl font-bold mb-4">
+              COBIT 5 DINUSLIB
+            </h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Analisis tata kelola TI menggunakan
+              framework COBIT 5 domain MEA.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-32 bg-[#07111f]">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <h2 class="text-5xl font-bold mb-8">
+        Contact Me
+      </h2>
+
+      <p class="text-gray-400 text-lg mb-10">
+        Let's build something amazing together.
       </p>
 
-      <div class="mt-8 flex justify-center gap-4">
+      <div class="flex justify-center gap-6">
+
+        <a
+          href="mailto:daffaejp@gmail.com"
+          class="bg-cyan-500 hover:bg-cyan-400 transition px-8 py-4 rounded-2xl font-semibold"
+        >
+          Email Me
+        </a>
 
         <a
           href="https://github.com/Erlanggard"
           target="_blank"
-          class="bg-white text-black px-6 py-3 rounded-xl"
+          class="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition px-8 py-4 rounded-2xl font-semibold"
         >
           GitHub
         </a>
 
-        <a
-          href="https://www.linkedin.com/in/daffa-erlangga-joko-putra-2251a5361"
-          target="_blank"
-          class="bg-cyan-500 px-6 py-3 rounded-xl"
-        >
-          LinkedIn
-        </a>
-
       </div>
+
     </div>
+
   </section>
-  <section id="about" class="py-24 px-6">
-  <div class="max-w-5xl mx-auto">
-
-    <h2 class="text-4xl font-bold mb-8">
-      About Me
-    </h2>
-
-    <p class="text-gray-300 leading-relaxed">
-      Fresh graduate Sistem Informasi dengan fokus pada IT Audit,
-      Tata Kelola TI, dan UI/UX Design. Memiliki pengalaman
-      merancang sistem informasi berbasis website menggunakan
-      metode User Centered Design serta analisis tata kelola TI
-      menggunakan framework COBIT 5.
-    </p>
-
-  </div>
-</section>
-<section class="py-24 bg-gray-900">
-
-  <div class="max-w-5xl mx-auto px-6">
-
-    <h2 class="text-4xl font-bold mb-10">
-      Skills
-    </h2>
-
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-
-      <div class="bg-gray-800 p-6 rounded-xl">
-        HTML
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-xl">
-        CSS
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-xl">
-        JavaScript
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-xl">
-        Tailwind CSS
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-xl">
-        UI/UX Design
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-xl">
-        COBIT 5
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-xl">
-        Risk Based Audit
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-xl">
-        Figma
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<section id="projects" class="py-24 px-6">
-
-  <div class="max-w-6xl mx-auto">
-
-    <h2 class="text-4xl font-bold mb-12">
-      Projects
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <!-- Project 1 -->
-      <div class="bg-gray-900 rounded-2xl overflow-hidden">
-
-        <img src="./assets/project1.png">
-
-        <div class="p-6">
-
-          <h3 class="text-2xl font-bold mb-3">
-            Mitra Solusi Teknologi
-          </h3>
-
-          <p class="text-gray-400 mb-4">
-            Website pelatihan berbasis UCD untuk
-            pelatihan inovasi teknologi dan manajemen usaha.
-          </p>
-
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="bg-gray-900 rounded-2xl overflow-hidden">
-
-        <img src="./assets/project2.png">
-
-        <div class="p-6">
-
-          <h3 class="text-2xl font-bold mb-3">
-            Audit Sistem Informasi Dinustek
-          </h3>
-
-          <p class="text-gray-400">
-            Audit keamanan jaringan menggunakan
-            pendekatan Risk Based Audit.
-          </p>
-
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="bg-gray-900 rounded-2xl overflow-hidden">
-
-        <img src="./assets/project3.png">
-
-        <div class="p-6">
-
-          <h3 class="text-2xl font-bold mb-3">
-            COBIT 5 DINUSLIB
-          </h3>
-
-          <p class="text-gray-400">
-            Analisis tata kelola TI menggunakan
-            domain MEA COBIT 5.
-          </p>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<section id="contact" class="py-24 bg-gray-900">
-
-  <div class="max-w-4xl mx-auto text-center">
-
-    <h2 class="text-4xl font-bold mb-6">
-      Contact Me
-    </h2>
-
-    <p class="text-gray-400 mb-8">
-      Let's collaborate together.
-    </p>
-
-    <div class="flex justify-center gap-4">
-
-      <a
-        href="mailto:daffaejp@gmail.com"
-        class="bg-cyan-500 px-6 py-3 rounded-xl"
-      >
-        Email
-      </a>
-
-      <a
-        href="https://github.com/Erlanggard"
-        target="_blank"
-        class="bg-white text-black px-6 py-3 rounded-xl"
-      >
-        GitHub
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
 
 </body>
 </html>
